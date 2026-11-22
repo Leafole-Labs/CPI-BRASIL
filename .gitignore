@@ -10,7 +10,9 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/DevAssets/
 *.log
+/**/*.log
 
 # Unity3D generated meta files
 *.pidb.meta

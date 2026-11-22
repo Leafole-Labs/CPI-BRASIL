@@ -665284,6 +665284,75 @@ CapsuleCollider:
   m_Height: 24
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &450084041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8128668236925612103, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_Name
+      value: geladeira_eletrolux
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.1655245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -101.133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.191038
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.25073817
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.25073823
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6611584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6611584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: d3f70cb3e75e4524cb065187c869d5cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -138.462
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: -5645937942226959685, guid: d3f70cb3e75e4524cb065187c869d5cb,
+    type: 3}
 --- !u!1001 &475728887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -674408,3 +674477,4 @@ SceneRoots:
   - {fileID: 12642}
   - {fileID: 15127}
   - {fileID: 58206684}
+  - {fileID: 450084041}

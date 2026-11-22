@@ -4,7 +4,7 @@ using UnityEngine;
 public class DiscordInviteOpener : MonoBehaviour
 {
     [SerializeField]
-    private string inviteUrl = "https://discord.gg/jkWbd3uqTS";
+    private string inviteUrl = "https://discord.gg/xDSQUPFrdN";
 
     public void OpenDiscordInvite()
     {
