@@ -1,98 +1,114 @@
-# Requirements to Open the Project
+# CPI BRASIL ������
+
+Uma continuação e modificação brasileira da restauração de código aberto do *Club Penguin Island* (baseada no **OpenCPI Interactive**), mantida por **Rfonte5748** (Leafole Labs), trazendo localização, referências brasileiras, easter eggs espalhados pela ilha e novas modificações diretamente no motor Unity.
+
+---
+
+# Requisitos para Abrir o Projeto
 
 > [!IMPORTANT]
-> ### Unity Version
+> ### Versão do Unity
 > - **Unity 6000.3.28f1 LTS**
 
-## **The backstory to OpenCPI:**
-- Malcolm (wednesday2024) started working on decompiling Club Penguin Island sometime in 2019, then took a massive break until either 2022 or 2023, when he began exploring the idea of bringing Club Penguin Island to Linux so that it could run natively without the help of Wine or Steam's Proton. On May 5th, 2024, OpenCPI was born to preserve and open source the game's recreated source code, bringing parties, bug fixes, improvements, and expanded features (though we weren't called OpenCPI when it first opened. We initially named it "CP Island Localhost Server," but shortly after launching, we changed the name to the OpenCPI branding that we know today). In August of 2024, we put what we had on the Internet Archive, but we later moved it to GitHub in the fall of 2024. In April of 2025, we brought builds to Itch (which later got routed to the builds that you would find on our website). Fast forward to late September 2026, we rebranded OpenCPI to OpenCPI Interactive when we brought the game from the Built in Render Pipeline (BIRP) to the Universal Render Pipeline (URP). We have support for the following platforms: Windows (Vulkan Graphics API), Android (Vulkan Graphics API), Linux (Vulkan Graphics API), macOS (Intel + Apple's Arm Silicon), and an experimental but no longer maintained WebGL. The Android code should theoretically be ready for iOS as well but it is largely untested.
+## **A história do OpenCPI e a continuação como CPI BRASIL:**
+- **A origem (OpenCPI Interactive):** Malcolm (`wednesday2024`) começou a trabalhar na descompilação do *Club Penguin Island* em 2019, retomando o projeto entre 2022 e 2023 com o objetivo de fazer o jogo rodar nativamente no Linux sem depender do Wine ou Proton. Em 5 de maio de 2024 nasceu o OpenCPI (inicialmente chamado de *CP Island Localhost Server*) para preservar e abrir o código-fonte recriado do jogo com festas, correções de bugs e novos recursos. Em setembro de 2026, o projeto foi renomeado para **OpenCPI Interactive**, migrando do *Built-in Render Pipeline (BIRP)* para o *Universal Render Pipeline (URP)* com suporte a Windows (Vulkan), Android (Vulkan), Linux (Vulkan), macOS (Intel + Apple Silicon) e WebGL experimental.
+- **A continuação (CPI BRASIL):** Em novembro de 2026, **Rfonte5748** (Leafole Labs) assumiu a continuação deste fork criando o **CPI BRASIL**, adaptando o projeto para o público brasileiro com identidade própria, elementos culturais do Brasil, easter eggs ocultos nos mapas e modificações personalizadas na engine.
 
- ## **Builds can be found here:**
- - [Builds](https://opencpisland.com/)
+## **Builds:**
+- **Builds do CPI BRASIL:** Podem ser encontradas diretamente na aba de [Releases](https://github.com/Leafole-Labs/CPI-BRASIL/releases) aqui no repositório.
+- **Builds da base original (OpenCPI):** Podem ser encontradas em [OpenCPI Builds](https://opencpisland.com/).
 
 > [!CAUTION]
-> ## **How do I clone the repo?**
-> - I do NOT recommend using GitHub's built in ZIP download feature. Because it tends to forget to download files which breaks the project. I only recommend using the older HTTPS git clone or the new Git CLI gh repo clone options to download the repo on Linux. If you are on Windows or macOS, I recommend using git clone or using the official GitHub Desktop app. 
+> ## **Como clonar o repositório?**
+> - **NÃO** utilize o recurso de download em `.ZIP` do GitHub, pois ele costuma ignorar arquivos essenciais e quebra o projeto. Utilize o `git clone` (HTTPS ou SSH), o Git CLI (`gh`) ou o aplicativo oficial do GitHub Desktop.
 
-> HTTPS method:
-> ```git clone https://github.com/wednesday2024/CPI-Project.git```
+> Método HTTPS:
+> ```bash
+> git clone [https://github.com/Leafole-Labs/CPI-BRASIL.git](https://github.com/Leafole-Labs/CPI-BRASIL.git)
+> ```
 
-> Git CLI method:
-> ```gh repo clone wednesday2024/CPI-Project```
+> Método SSH:
+> ```bash
+> git clone git@github.com:Leafole-Labs/CPI-BRASIL.git
+> ```
 
-> [The Github Desktop app method](https://github.com/apps/desktop)
+> Método Git CLI:
+> ```bash
+> gh repo clone Leafole-Labs/CPI-BRASIL
+> ```
 
- ## **Commonly asked questions:**
+> [Aplicativo GitHub Desktop](https://github.com/apps/desktop)
 
- Q: Why is everything pink or not loading when I load the game?
+---
 
- A: You need to run the Unity Editor menu item:```Project -> AssetBundles -> Generated -> Generate client side AssetBundles```
+## **Perguntas Frequentes (FAQ):**
 
- ### Notes
- - **The Penguin data gets stored here in the Windows Registry:**  
-  - **Built .exe client:** `HKEY_CURRENT_USER\SOFTWARE\OpenCPI Interactive\CP Island`  
+**P: Por que tudo fica rosa ou não carrega quando eu inicio o jogo?**
+
+**R:** Você precisa gerar os AssetBundles do cliente no menu superior do Unity Editor antes de dar Play:
+```text
+Project -> AssetBundles -> Generated -> Generate client side AssetBundles
+```
+
+### Notas Técnicas
+- **Os dados do pinguim ficam salvos no Registro do Windows em:**
+  - **Cliente compilado (.exe):** `HKEY_CURRENT_USER\SOFTWARE\OpenCPI Interactive\CP Island`
   - **Unity Editor:** `HKEY_CURRENT_USER\SOFTWARE\Unity\UnityEditor\OpenCPI Interactive\CP Island`
- - **The Penguin data gets stored here on Linux for the built client but the Editor path is currently unknown because we had to rewrite the data paths to play more nicely with Linux:**
-  - `/home/your_username/.config/unity3d/OpenCPI Interactive/CP Island/prefs`
- - To launch the game in the Unity editor:
-   - Open `Assets/Game/Core/Scenes/Boot.unity`
-  - Hit the Play button.
-  - Or click the "Disney Fast Play" menu item under "Project" from any scene.
- - **Join our Discord for support, chatting, or for future updates:** [join here](https://discord.gg/jkWbd3uqTS)
+- **No Linux, os dados do cliente compilado ficam salvos em:**
+  - `/home/seu_usuario/.config/unity3d/OpenCPI Interactive/CP Island/prefs`
+- **Para iniciar o jogo dentro do Unity Editor:**
+  - Abra a cena `Assets/Game/Core/Scenes/Boot.unity` e clique no botão **Play**.
+  - Ou clique no atalho **"Disney Fast Play"** dentro do menu superior **"Project"** a partir de qualquer cena.
+- **Discord oficial da base OpenCPI (suporte e atualizações):** [Entrar no Discord](https://discord.gg/jkWbd3uqTS)
+
+---
 
 > [!IMPORTANT]  
-> ## System Requirements
+> ## Requisitos do Sistema
 
 > ### Windows
-> - Latest version of Visual Studio Community.
-> - [Git for Windows](https://gitforwindows.org/) installed. **Restart your PC after installing Git.**
+> - Versão mais recente do Visual Studio Community.
+> - [Git for Windows](https://gitforwindows.org/) instalado. **Reinicie o computador após instalar o Git.**
 
 > ### macOS
-> - Latest version of Xcode for your version of macOS.
+> - Versão mais recente do Xcode compatível com o seu macOS.
 
 > ### Linux
-> - Make sure your system is updated:
+> - Certifique-se de que o sistema está atualizado:
 >   ```bash
 >   sudo apt update && sudo apt upgrade
 >   ```
-> - Install Git:
+> - Instale o Git e o GitHub CLI:
 >   ```bash
 >   sudo apt install git gh
 >   ```
->  - Make sure to install this component for X11 Window manager distros (this will be used within the editor and outside of the editor during runtime):
->    ```bash
->    sudo apt-get install libx11-dev
->    ```
+> - Para distros com gerenciador de janelas X11, instale este pacote (necessário tanto no Editor quanto em tempo de execução):
+>   ```bash
+>   sudo apt-get install libx11-dev
+>   ```
 
 > [!IMPORTANT]
-> For further documentation, refer to the [OpenCPI Docs](DevAssets/Offline-Project-Instructions). If something is missing, feel free to create a fork and send a pull request.
+> Para documentação adicional da engine base, consulte a pasta [OpenCPI Docs](DevAssets/Offline-Project-Instructions).
 
-> ## Special thanks to the following people who have made this restoration possible:
+---
 
-> [Galaxyrelic](https://github.com/Galaxyrelic)
+## Contribuidores
 
-> [ChavalSaturado](https://github.com/ChavalSaturado?tab=repositories)
+### Mantenedor do CPI BRASIL
+* [**Rfonte5748**](https://github.com/Leafole-Labs) — Criação, adaptação brasileira, modificações de cenas e continuação do projeto **CPI BRASIL**
 
-> [PickleOnAString](https://github.com/PickleOnAString)
-
-> [broimluna](https://github.com/broimluna)
-
-> [shinonasada9](https://github.com/shinonasada9)
-
-> [wednesday2024](https://github.com/wednesday2024)
-
-> [AllinolCP](https://github.com/AllinolCP)
-
-> [Minileandro](https://github.com/Minileandro)
-
-> [Thunder](https://github.com/Ivorplayz)
-
-> [Koloway](https://github.com/Koloway)
-
-> [Maksim](https://github.com/loozmax)
-
-> [tboskkk](https://github.com/tboskkk)
-
-> miraculizado (Discord)
-
-> approt (Discord)
+### Agradecimentos Especiais (Equipe da Restauração Base OpenCPI)
+* [Galaxyrelic](https://github.com/Galaxyrelic)
+* [ChavalSaturado](https://github.com/ChavalSaturado?tab=repositories)
+* [PickleOnAString](https://github.com/PickleOnAString)
+* [broimluna](https://github.com/broimluna)
+* [shinonasada9](https://github.com/shinonasada9)
+* [wednesday2024](https://github.com/wednesday2024)
+* [AllinolCP](https://github.com/AllinolCP)
+* [Minileandro](https://github.com/Minileandro)
+* [Thunder](https://github.com/Ivorplayz)
+* [Koloway](https://github.com/Koloway)
+* [Maksim](https://github.com/loozmax)
+* [tboskkk](https://github.com/tboskkk)
+* miraculizado (Discord)
+* approt (Discord)
