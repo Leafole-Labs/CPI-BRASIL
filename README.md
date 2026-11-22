@@ -14,11 +14,11 @@ Uma continuação e modificação brasileira da restauração de código aberto 
 
 
 
-> \[!IMPORTANT]
+> \\\[!IMPORTANT]
 
 > ### Versão do Unity
 
-> - \*\*Unity 6000.3.28f1 LTS\*\*
+> - \\\*\\\*Unity 6000.3.28f1 LTS\\\*\\\*
 
 
 
@@ -38,11 +38,11 @@ Uma continuação e modificação brasileira da restauração de código aberto 
 
 
 
-> \[!CAUTION]
+> \\\[!CAUTION]
 
-> ## \*\*Como clonar o repositório?\*\*
+> ## \\\*\\\*Como clonar o repositório?\\\*\\\*
 
-> - \*\*NÃO\*\* utilize o recurso de download em `.ZIP` do GitHub, pois ele costuma ignorar arquivos essenciais e quebra o projeto. Utilize o `git clone` (HTTPS ou SSH), o Git CLI (`gh`) ou o aplicativo oficial do GitHub Desktop.
+> - \\\*\\\*NÃO\\\*\\\* utilize o recurso de download em `.ZIP` do GitHub, pois ele costuma ignorar arquivos essenciais e quebra o projeto. Utilize o `git clone` (HTTPS ou SSH), o Git CLI (`gh`) ou o aplicativo oficial do GitHub Desktop.
 
 
 
@@ -50,7 +50,7 @@ Uma continuação e modificação brasileira da restauração de código aberto 
 
 > ```bash
 
-> git clone \[https://github.com/Leafole-Labs/CPI-BRASIL.git](https://github.com/Leafole-Labs/CPI-BRASIL.git)
+> git clone \\\[https://github.com/Leafole-Labs/CPI-BRASIL.git](https://github.com/Leafole-Labs/CPI-BRASIL.git)
 
 > ```
 
@@ -76,7 +76,7 @@ Uma continuação e modificação brasileira da restauração de código aberto 
 
 
 
-> \[Aplicativo GitHub Desktop](https://github.com/apps/desktop)
+> \\\[Aplicativo GitHub Desktop](https://github.com/apps/desktop)
 
 
 
@@ -106,13 +106,13 @@ Project -> AssetBundles -> Generated -> Generate client side AssetBundles
 
 \- \*\*Os dados do pinguim ficam salvos no Registro do Windows em:\*\*
 
-&#x20; - \*\*Cliente compilado (.exe):\*\* `HKEY\_CURRENT\_USER\\SOFTWARE\\OpenCPI Interactive\\CP Island`
+&#x20; - \*\*Cliente compilado (.exe):\*\* `HKEY\\\_CURRENT\\\_USER\\\\SOFTWARE\\\\OpenCPI Interactive\\\\CP Island`
 
-&#x20; - \*\*Unity Editor:\*\* `HKEY\_CURRENT\_USER\\SOFTWARE\\Unity\\UnityEditor\\OpenCPI Interactive\\CP Island`
+&#x20; - \*\*Unity Editor:\*\* `HKEY\\\_CURRENT\\\_USER\\\\SOFTWARE\\\\Unity\\\\UnityEditor\\\\OpenCPI Interactive\\\\CP Island`
 
 \- \*\*No Linux, os dados do cliente compilado ficam salvos em:\*\*
 
-&#x20; - `/home/seu\_usuario/.config/unity3d/OpenCPI Interactive/CP Island/prefs`
+&#x20; - `/home/seu\\\_usuario/.config/unity3d/OpenCPI Interactive/CP Island/prefs`
 
 \- \*\*Para iniciar o jogo dentro do Unity Editor:\*\*
 
@@ -128,7 +128,7 @@ Project -> AssetBundles -> Generated -> Generate client side AssetBundles
 
 
 
-> \[!IMPORTANT]  
+> \\\[!IMPORTANT]  
 
 > ## Requisitos do Sistema
 
@@ -138,7 +138,7 @@ Project -> AssetBundles -> Generated -> Generate client side AssetBundles
 
 > - Versão mais recente do Visual Studio Community.
 
-> - \[Git for Windows](https://gitforwindows.org/) instalado. \*\*Reinicie o computador após instalar o Git.\*\*
+> - \\\[Git for Windows](https://gitforwindows.org/) instalado. \\\*\\\*Reinicie o computador após instalar o Git.\\\*\\\*
 
 
 
@@ -154,7 +154,7 @@ Project -> AssetBundles -> Generated -> Generate client side AssetBundles
 
 >   ```bash
 
->   sudo apt update \&\& sudo apt upgrade
+>   sudo apt update \\\&\\\& sudo apt upgrade
 
 >   ```
 
@@ -176,9 +176,9 @@ Project -> AssetBundles -> Generated -> Generate client side AssetBundles
 
 
 
-> \[!IMPORTANT]
+> \\\[!IMPORTANT]
 
-> Para documentação adicional da engine base, consulte a pasta \[OpenCPI Docs](DevAssets/Offline-Project-Instructions).
+> Para documentação adicional da engine base, consulte a pasta \\\[OpenCPI Docs](DevAssets/Offline-Project-Instructions).
 
 
 
